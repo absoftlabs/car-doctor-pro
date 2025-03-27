@@ -19,7 +19,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html className="" lang="en">
+    <html className="" lang="en" data-theme="mytheme">
       <body
         className={`${geistSans.variable} ${geistMono.variable} w-full antialiased grid place-content-around`}
       >

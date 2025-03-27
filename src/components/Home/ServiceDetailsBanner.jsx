@@ -6,8 +6,8 @@ export default function ServiceDetailsBanner() {
     return (
         <div className='md:my-5 w-full'>
             <figure className='w-full relative'>
-                <Image className='w-full' src={banner} sizes="(width: 100% height: 400px) 100vw" alt='banner' />
-                <div className="absolute top-0 left-0 h-full w-full bg-black opacity-20 bg-blend-overlay">
+                <Image className='w-full rounded-xl overflow-hidden' src={banner} sizes="(width: 100% height: 400px) 100vw" alt='banner' />
+                <div className="absolute top-0 left-0 h-full w-full bg-black opacity-40 bg-blend-overlay">
                     
                 </div>
                 <h1 className='absolute top-[30%] md:top-[40%] left-[30%] md:left-[10%] text-center text-white font-bold text-[24px] md:text-[42px] '>Service Details</h1>
