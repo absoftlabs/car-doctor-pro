@@ -18,12 +18,12 @@ export default async function ServicesSection() {
                 <h1 className='font-bold text-[45px] text-center'>Our Service Area</h1>
                 <p className='text-[16px] font-light text-center'>the majority have suffered alteration in some form, by injected humour, or randomised <br></br>words which don't look even slightly believable. </p>
             </div>
-            <div className='grid grid-cols-12 gap-5'>
+            <div className='grid grid-cols-12 gap-5 my-5'>
                 {
                     data.map((item) => {
                         return (
                             <div key={item._id} className='col-span-12 md:col-span-6 lg:col-span-4'>
-                                <div className="card bg-base-100 w-full shadow-sm p-6 border-2a border-gray-300">
+                                <div className="card bg-white w-full shadow-sm p-6 border-2 border-gray-300">
                                     <figure className='min-h-[208px]'>
                                         <Image className='rounded-lg' src={item.img} height={208} width={314} alt={item.title} />
                                     </figure>
