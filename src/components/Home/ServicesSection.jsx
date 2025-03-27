@@ -1,13 +1,18 @@
+import dbConnect from '@/lib/dbConnect';
 import { IconArrowRight } from '@tabler/icons-react';
 import Image from 'next/image';
 import React from 'react'
 
 export default async function ServicesSection() {
-    const res = await fetch('http://localhost:3000/services.json');
-    const data = await res.json();
+    // const res = await fetch('http://localhost:3000/services.json');
+    // const data = await res.json();
+    const serviceCollection = dbConnect("services");
+    const data = await serviceCollection.find({}).toArray();
+    console.log(process.env.MONGODB_URIcha);
+    
     return (
-        <div className=''>
-            <div className="my-5">
+        <div className='my-5 px-4 md:px-0'>
+            <div className="">
                 <p className='font-bold text-info text-center text-[20px]'>Services</p>
                 <h1 className='font-bold text-[45px] text-center'>Our Service Area</h1>
                 <p className='text-[16px] font-light text-center'>the majority have suffered alteration in some form, by injected humour, or randomised <br></br>words which don't look even slightly believable. </p>
@@ -21,7 +26,7 @@ export default async function ServicesSection() {
                                     <figure className='min-h-[208px]'>
                                         <Image className='rounded-lg' src={item.img} height={208} width={314} alt='service thumbnail' />
                                     </figure>
-                                    <div className="card-body">
+                                    <div className="card-body px-0 pb-0">
                                         <h2 className="card-title text-[25px] font-bold">{item.title}</h2>
                                         <div className="card-actions flex justify-between items-center">
                                             <p className='font-bold text-info text-[20px]'>Price:{item.price}</p>
