@@ -1,7 +1,8 @@
 import { MongoClient, ServerApiVersion } from "mongodb";
 
 export const collectionNamesObj = {
-    serviesCollection : "services"
+    serviesCollection : "services",
+    userCollection: "user"
 }
 
 export default function dbConnect(collectionName) {

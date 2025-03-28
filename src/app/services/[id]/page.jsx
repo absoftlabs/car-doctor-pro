@@ -1,9 +1,9 @@
 import dbConnect, { collectionNamesObj } from '@/lib/dbConnect'
 import { ObjectId } from 'mongodb'
 import React from 'react'
-import ServiceDetailsBanner from '@/components/Home/ServiceDetailsBanner';
-import ServiceDetails from '@/components/Home/ServiceDetails';
-import ServiceSideBar from '@/components/Home/ServiceSideBar';
+import ServiceDetailsBanner from '@/components/Services/ServiceDetailsBanner';
+import ServiceDetails from '@/components/Services/ServiceDetails';
+import ServiceSideBar from '@/components/Services/ServiceSideBar';
 
 export default async function page({ params }) {
     const p = await params;

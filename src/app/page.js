@@ -1,4 +1,4 @@
-import ServicesSection from "@/components/Home/ServicesSection";
+import ServicesSection from "@/components/Services/ServicesSection";
 import Image from "next/image";
 
 export default function Home() {
