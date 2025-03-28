@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+
+.error {
+    display: grid;
+    align-content: center;
+    width: 100%;
+    height: 70vh;
+}

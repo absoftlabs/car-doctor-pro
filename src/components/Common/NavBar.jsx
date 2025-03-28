@@ -42,7 +42,10 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn btn-info btn-outline hover:text-white">Appoinments</a>
+                <div className="join">
+                    <Link href={'/login'} className="btn btn-info join-item">Login</Link>
+                    <Link href={'/register'} className="btn btn-info btn-outline join-item">Sign Up</Link>
+                </div>
             </div>
         </div>
     );
