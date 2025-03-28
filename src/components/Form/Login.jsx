@@ -12,7 +12,7 @@ export default function Login() {
             </div>
             <div className="col-span-12 md:col-span-5">
                 <div className="border-2 border-gray-300 rounded-xl p-[75px]">
-                    <h2 className='text-[25px] md:text-[40px] text-center font-semibold'>Sign Up</h2>
+                    <h2 className='text-[25px] md:text-[40px] text-center font-semibold'>Login</h2>
                     <form>
                         <fieldset className="fieldset">
                             <legend className="fieldset-legend">Email</legend>
