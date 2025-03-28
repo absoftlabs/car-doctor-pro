@@ -20,7 +20,7 @@ export default function Login() {
                         </fieldset>
                         <fieldset className="fieldset">
                             <legend className="fieldset-legend">Confirm Password</legend>
-                            <input type="password" className="input w-full" placeholder="Your password" />
+                            <input type="password" className="input w-full" placeholder="Your password"/>
                         </fieldset>
                     </form>
                     <div className='my-5'>
@@ -28,7 +28,7 @@ export default function Login() {
                         <p className='text-center text-[16px] md:text-[18px] my-5'>Or Sign In with</p>
                         <div className="flex gap-4 justify-center items-center">
                             <div className="bg-base-200 rounded-full h-[55px] w-[55px] grid place-content-center">
-                                <IconBrandFacebookFilled className='text-blue-900'/>
+                                <IconBrandFacebookFilled className='text-blue-800'/>
                             </div>
                             <div className="bg-base-200 rounded-full h-[55px] w-[55px] grid place-content-center">
                                 <IconBrandLinkedinFilled className='text-blue-600'/>
