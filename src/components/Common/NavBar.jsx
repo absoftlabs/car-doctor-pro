@@ -1,9 +1,12 @@
+'use client'
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '@/assets/logo.svg';
 
 const NavBar = () => {
+    const [isActive, setIsActive] = useState(0);
+
     const navMenu = () => {
         return (
             <>
@@ -43,8 +46,8 @@ const NavBar = () => {
             </div>
             <div className="navbar-end">
                 <div className="join">
-                    <Link href={'/login'} className="btn btn-info join-item">Login</Link>
-                    <Link href={'/register'} className="btn btn-info btn-outline join-item">Sign Up</Link>
+                    <Link onClick={()=> setIsActive(1)} href={'/login'} className={`btn join-item btn-info ${isActive === 0 ? 'btn-outline' : 'btn-info'}`}>Login</Link>
+                    <Link onClick={()=> setIsActive(0)} href={'/register'} className={`btn join-item btn-info ${isActive === 1 ? 'btn-outline' : 'btn-info'}`}>Sign Up</Link>
                 </div>
             </div>
         </div>
