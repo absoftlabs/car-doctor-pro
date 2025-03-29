@@ -3,9 +3,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import logo from '@/assets/logo.svg';
-import { signOut } from "next-auth/react"
+import { signOut, useSession } from "next-auth/react"
 
 const NavBar = () => {
+    const { data: session, status } = useSession();
     const [isActive, setIsActive] = useState(0);
 
     const navMenu = () => {
@@ -46,13 +47,18 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <div className="join">
-                    <Link onClick={()=> setIsActive(1)} href={'/login'} className={`btn join-item btn-info ${isActive === 0 ? 'btn-outline' : 'btn-info'}`}>Login</Link>
-                    <Link onClick={()=> setIsActive(0)} href={'/register'} className={`btn join-item btn-info ${isActive === 1 ? 'btn-outline' : 'btn-info'}`}>Sign Up</Link>
-                </div>
-                <button onClick={() => signOut()} className="btn btn-error">Logout</button>
-            </div>
-        </div>
+                {
+                    status === 'authenticated' ? (
+                        <button onClick={() => signOut()} className="btn btn-error">Logout</button>
+                    ) : (
+                        <div className="join">
+                            <Link onClick={() => setIsActive(1)} href={'/login'} className={`btn join-item btn-info ${isActive === 0 ? 'btn-outline' : 'btn-info'}`}>Login</Link>
+                            <Link onClick={() => setIsActive(0)} href={'/register'} className={`btn join-item btn-info ${isActive === 1 ? 'btn-outline' : 'btn-info'}`}>Sign Up</Link>
+                        </div>
+                    )
+                }
+            </div >
+        </div >
     );
 };
 

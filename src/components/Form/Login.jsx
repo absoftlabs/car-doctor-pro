@@ -18,16 +18,16 @@ export default function Login() {
         const password = form.password.value;
         const toastId = toast.custom(() => (
             /* From Uiverse.io by ParasSalunke */
-            <div class="flex gap-3 flex-wrap justify-center p-4 md:p-12">
+            <div className="flex gap-3 flex-wrap justify-center p-4 md:p-12">
                 <button
                     disabled=""
                     type="button"
-                    class="text-white bg-orange-600 font-medium rounded-full text-sm px-6 py-3 text-center inline-flex items-center"
+                    className="text-white bg-orange-600 font-medium rounded-full text-sm px-6 py-3 text-center inline-flex items-center"
                 >
                     <svg
                         aria-hidden="true"
                         role="status"
-                        class="inline w-5 h-5 mr-2 text-white animate-spin"
+                        className="inline w-5 h-5 mr-2 text-white animate-spin"
                         viewBox="0 0 100 101"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
