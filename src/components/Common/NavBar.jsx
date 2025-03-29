@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import logo from '@/assets/logo.svg';
+import { signOut } from "next-auth/react"
 
 const NavBar = () => {
     const [isActive, setIsActive] = useState(0);
@@ -49,6 +50,7 @@ const NavBar = () => {
                     <Link onClick={()=> setIsActive(1)} href={'/login'} className={`btn join-item btn-info ${isActive === 0 ? 'btn-outline' : 'btn-info'}`}>Login</Link>
                     <Link onClick={()=> setIsActive(0)} href={'/register'} className={`btn join-item btn-info ${isActive === 1 ? 'btn-outline' : 'btn-info'}`}>Sign Up</Link>
                 </div>
+                <button onClick={() => signOut()} className="btn btn-error">Logout</button>
             </div>
         </div>
     );

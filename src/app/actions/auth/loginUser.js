@@ -9,5 +9,7 @@ export const loginUser = async (payload) => {
     const user = await userCollection.findOne({email})
     if (!user) return null
     const isPasswordOK = bcrypt.compare(user.password, password)
-    if (!isPasswordOK) return null;
+    if (!isPasswordOK) return null
+
+    return user;
 }
