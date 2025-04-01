@@ -17,8 +17,8 @@ export default async function Products() {
                     data.map(product => (
                         <div key={product._id} className="col-span-6 md:col-span-4">
                             <div className="card bg-base-100 w-96 shadow-smi border-2 border-gray-200 p-5">
-                                <figure className='h-[215px] bg-gray-300 py-[30px]'>
-                                    <Image src={product.image} height={200} width={200} sizes="(max-width: 100%) 100vw, 33vw"/>
+                                <figure className='h-[215px] bg-gray-100'>
+                                    <Image className='p-[15px]' src={product.image} height={200} width={200} sizes="(max-width: 100%) 100vw, 33vw"/>
                                 </figure>
                                 <div className="card-body flex flex-col items-center">
                                     <div className="rating">
