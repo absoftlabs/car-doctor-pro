@@ -9,7 +9,6 @@ export default async function ServicesSection() {
     // const data = await res.json();
     const serviceCollection = dbConnect(collectionNamesObj.serviesCollection);
     const data = await serviceCollection.find({}).toArray();
-    console.log(process.env.MONGODB_URIcha);
     
     return (
         <div className='my-5 px-4 md:px-0'>
