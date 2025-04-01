@@ -13,7 +13,7 @@ export default function Slider() {
     const swiperRef = useRef(null);
 
     useEffect(() => {
-        fetch('http://localhost:3000/slider.json')
+        fetch('/slider.json')
             .then(res => res.json())
             .then(data => setSlider(data));
     }, []);
