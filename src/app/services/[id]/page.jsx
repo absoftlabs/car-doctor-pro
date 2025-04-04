@@ -4,6 +4,7 @@ import React from 'react'
 import ServiceDetailsBanner from '@/components/Services/ServiceDetailsBanner';
 import ServiceDetails from '@/components/Services/ServiceDetails';
 import ServiceSideBar from '@/components/Services/ServiceSideBar';
+import PageHeader from '@/components/Ui/PageHeader';
 
 export default async function page({ params }) {
     const p = await params;
@@ -11,7 +12,7 @@ export default async function page({ params }) {
     const data = await servicesCollection.findOne({ _id: new ObjectId(p.id) })
     return (
         <div className=''>
-            <ServiceDetailsBanner />
+            <PageHeader title={'Service Details'} breadcrumb="Home / Service Details"/>
             <div className="grid grid-cols-12 gap-5 my-10">
                 <div className="col-span-12 md:col-span-8">
                     <ServiceDetails data={data} />
