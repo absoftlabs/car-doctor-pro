@@ -10,11 +10,11 @@ export default function ServiceSideBar() {
         <div>
             <div className="bg-base-200 rounded-xl p-10">
                 <h2 className='text-[25px] font-bold mb-5'>Services</h2>
-                <div onClick={() => setIsActive(0)} className={`mb-3 p-[18px] justify-between text-[16px] rounded-lg flex w-full cursor-pointer ${isActive === 0 ? 'bg-info text-white' : 'bg-white'}`}>Full Car Repair <IconArrowRight /></div>
-                <div onClick={() => setIsActive(1)} className={`mb-3 p-[18px] justify-between text-[16px] rounded-lg flex w-full cursor-pointer ${isActive === 1 ? 'bg-info text-white' : 'bg-white'}`}>Engine Repair <IconArrowRight /></div>
-                <div onClick={() => setIsActive(2)} className={`mb-3 p-[18px] justify-between text-[16px] rounded-lg flex w-full cursor-pointer ${isActive === 2 ? 'bg-info text-white' : 'bg-white'}`}>Automatic Services <IconArrowRight /></div>
-                <div onClick={() => setIsActive(3)} className={`mb-3 p-[18px] justify-between text-[16px] rounded-lg flex w-full cursor-pointer ${isActive === 3 ? 'bg-info text-white' : 'bg-white'}`}>Engine Oil Change <IconArrowRight /></div>
-                <div onClick={() => setIsActive(4)} className={`mb-3 p-[18px] justify-between text-[16px] rounded-lg flex w-full cursor-pointer ${isActive === 4 ? 'bg-info text-white' : 'bg-white'}`}>Battery Charge <IconArrowRight /></div>
+                <div onClick={() => setIsActive(0)} className={`mb-3 p-[18px] justify-between text-[16px] rounded-lg flex w-full cursor-pointer active:scale-95 transition-all ${isActive === 0 ? 'bg-info text-white' : 'bg-white'}`}>Full Car Repair <IconArrowRight /></div>
+                <div onClick={() => setIsActive(1)} className={`mb-3 p-[18px] justify-between text-[16px] rounded-lg flex w-full cursor-pointer active:scale-95 transition-all ${isActive === 1 ? 'bg-info text-white' : 'bg-white'}`}>Engine Repair <IconArrowRight /></div>
+                <div onClick={() => setIsActive(2)} className={`mb-3 p-[18px] justify-between text-[16px] rounded-lg flex w-full cursor-pointer active:scale-95 transition-all ${isActive === 2 ? 'bg-info text-white' : 'bg-white'}`}>Automatic Services <IconArrowRight /></div>
+                <div onClick={() => setIsActive(3)} className={`mb-3 p-[18px] justify-between text-[16px] rounded-lg flex w-full cursor-pointer active:scale-95 transition-all ${isActive === 3 ? 'bg-info text-white' : 'bg-white'}`}>Engine Oil Change <IconArrowRight /></div>
+                <div onClick={() => setIsActive(4)} className={`mb-3 p-[18px] justify-between text-[16px] rounded-lg flex w-full cursor-pointer active:scale-95 transition-all ${isActive === 4 ? 'bg-info text-white' : 'bg-white'}`}>Battery Charge <IconArrowRight /></div>
             </div>
             <div className="bg-secondary rounded-xl p-10 my-10">
                 <h2 className='text-[25px] font-bold mb-5 text-white'>Download</h2>
@@ -26,7 +26,7 @@ export default function ServiceSideBar() {
                             <p className='text-base-300 text-[14px] md:text-[16px]'>Download</p>
                         </div>
                     </div>
-                    <div className="bg-info p-4 rounded-xl">
+                    <div className="bg-info p-4 rounded-xl cursor-pointer active:scale-90 transition-all">
                         <IconArrowRight className='text-white' />
                     </div>
                 </div>
@@ -39,7 +39,7 @@ export default function ServiceSideBar() {
                             <p className='text-base-300 text-[14px] md:text-[16px]'>Download</p>
                         </div>
                     </div>
-                    <div className="bg-info p-4 rounded-xl">
+                    <div className="bg-info p-4 rounded-xl cursor-pointer active:scale-90 transition-all">
                         <IconArrowRight className='text-white' />
                     </div>
                 </div>

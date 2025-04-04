@@ -1,4 +1,5 @@
 import dbConnect, { collectionNamesObj } from '@/lib/dbConnect';
+import { IconShoppingBag } from '@tabler/icons-react';
 import Image from 'next/image';
 import React from 'react'
 
@@ -15,10 +16,13 @@ export default async function Products() {
             <div className="grid grid-cols-12 gap-8 my-10">
                 {
                     data.map(product => (
-                        <div key={product._id} className="col-span-6 md:col-span-4 sweet-shadow rounded-xl overflow-hidden">
-                            <div className="card p-5">
+                        <div key={product._id} className="col-span-6 md:col-span-4 sweet-shadow rounded-xl overflow-hidden relative">
+                            <div className="bg-white rounded-full p-2 absolute z-50 right-[30px] top-[30px] hover:bg-info hover:text-white transition-all cursor-pointer active:scale-90">
+                                <IconShoppingBag />
+                            </div>
+                            <div className="card p-5 z-10">
                                 <figure className='h-[215px] bg-[#f0f0f0]'>
-                                    <Image className='p-[15px]' src={product.image} height={200} width={200} sizes="(max-width: 100%) 100vw, 33vw" alt={product.name}/>
+                                    <Image className='p-[15px]' src={product.image} height={200} width={200} sizes="(max-width: 100%) 100vw, 33vw" alt={product.name} />
                                 </figure>
                                 <div className="card-body flex flex-col items-center">
                                     <div className="rating">
@@ -26,12 +30,13 @@ export default async function Products() {
                                         <input type="radio" name={product.name} className="mask mask-star-2 bg-info" aria-label="2 star" />
                                         <input type="radio" name={product.name} className="mask mask-star-2 bg-info" aria-label="3 star" />
                                         <input type="radio" name={product.name} className="mask mask-star-2 bg-info" aria-label="4 star" />
-                                        <input type="radio" name={product.name} className="mask mask-star-2 bg-info" aria-label="5 star" defaultChecked/>
+                                        <input type="radio" name={product.name} className="mask mask-star-2 bg-info" aria-label="5 star" defaultChecked />
                                     </div>
                                     <h2 className="card-title text-2xl font-bold">{product.name}</h2>
                                     <p className='text-info text-[18px] md:text-[20px] font-bold'>${product.price}</p>
                                 </div>
                             </div>
+
                         </div>
                     ))
                 }

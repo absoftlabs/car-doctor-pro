@@ -30,7 +30,7 @@ export default async function ServicesSection() {
                                         <h2 className="card-title text-[25px] font-bold">{item.title}</h2>
                                         <div className="card-actions flex justify-between items-center">
                                             <p className='font-bold text-info text-[20px]'>Price: {item.price}</p>
-                                            <Link href={`/services/${item._id}`} className="btn btn-ghost text-info"><IconArrowRight /></Link>
+                                            <Link href={`/services/${item._id}`} className="p-4 rounded-xl hover:bg-info hover:text-white text-info active:scale-90 transition-all"><IconArrowRight /></Link>
                                         </div>
                                     </div>
                                 </div>
