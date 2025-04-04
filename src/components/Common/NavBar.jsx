@@ -54,7 +54,7 @@ const NavBar = () => {
                             // <button onClick={() => signOut()} className="btn btn-error">Logout</button>
                             <div className="flex gap-2">
                                 <div className="dropdown dropdown-end">
-                                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+                                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle active:scale-90 transition-all">
                                         <div className="indicator">
                                             <IconShoppingBag/>
                                             <span className="indicator-item text-info">1</span>
@@ -73,7 +73,7 @@ const NavBar = () => {
                                     </div>
                                 </div>
                                 <div className="dropdown dropdown-end">
-                                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar active:scale-90 transition-all">
                                         <div className="w-10 rounded-full">
                                             <Image src={'https://i.ibb.co.com/G36qb7X/nft1.jpg'} height={40} width={40} alt='avater'/>
                                         </div>
