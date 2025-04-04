@@ -1,10 +1,10 @@
 import dbConnect, { collectionNamesObj } from '@/lib/dbConnect'
 import { ObjectId } from 'mongodb'
 import React from 'react'
-import ServiceDetailsBanner from '@/components/Services/ServiceDetailsBanner';
 import ServiceDetails from '@/components/Services/ServiceDetails';
 import ServiceSideBar from '@/components/Services/ServiceSideBar';
 import PageHeader from '@/components/Ui/PageHeader';
+import Link from 'next/link';
 
 export default async function page({ params }) {
     const p = await params;
@@ -21,7 +21,7 @@ export default async function page({ params }) {
                     <ServiceSideBar />
                     <div>
                         <h3 className='font-bold text-[35px] mb-4'>Price: ${data.price}</h3>
-                        <button className="btn btn-block btn-info btn-xl">Proceed Checkout</button>
+                        <Link href={`/checkout/${data._id}`} className="btn btn-block btn-info btn-xl">Proceed Checkout</Link>
                     </div>
                 </div>
             </div>
