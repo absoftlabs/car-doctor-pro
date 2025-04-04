@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
         <NextAuthProvider>
           <NavBar />
           <Toaster position="top-center" reverseOrder={false} />
-          <div className="w-[360px] md:w-[820px] lg:w-[1200px] mx-auto">
+          <div className="w-full md:w-[820px] lg:w-[1200px] mx-auto">
             {children}
           </div>
           <Footer />
