@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import logo from '@/assets/white_logo.svg'
 import Link from 'next/link'
+import { IconBrandFacebookFilled, IconBrandInstagramFilled, IconBrandLinkedinFilled, IconBrandTwitterFilled } from '@tabler/icons-react'
 
 export default function Footer() {
     return (
@@ -10,6 +11,12 @@ export default function Footer() {
                 <div className="col-span-11 md:col-span-5">
                     <Image src={logo} height={80} width={120} alt='logo' />
                     <p className='text-white text-[14px] md:text-[16px]'>Edwin Diaz is a software and web<br></br> technologies engineer, a life coach<br></br> trainer who is also a serial.</p>
+                    <div className="flex gap-2 items-center text-white mt-5">
+                        <p className='bg-[#363636] p-3 rounded-full cursor-pointer active:scale-90 transition-all'><IconBrandFacebookFilled/></p>
+                        <p className='bg-[#363636] p-3 rounded-full cursor-pointer active:scale-90 transition-all'><IconBrandTwitterFilled/></p>
+                        <p className='bg-[#363636] p-3 rounded-full cursor-pointer active:scale-90 transition-all'><IconBrandInstagramFilled/></p>
+                        <p className='bg-[#363636] p-3 rounded-full cursor-pointer active:scale-90 transition-all'><IconBrandLinkedinFilled/></p>
+                    </div>
                 </div>
                 <div className="col-span-11 md:col-span-2">
                     <h4 className='text-[20px] text-white font-bold mb-3'>About</h4>
