@@ -73,11 +73,11 @@ export default function Login() {
                     <form onSubmit={handleSubmit}>
                         <fieldset className="fieldset">
                             <legend className="fieldset-legend">Email</legend>
-                            <input name='email' type="email" className="input w-full" placeholder="Your email" />
+                            <input name='email' type="email" className="input w-full focus:outline-none border-0 input-bg" placeholder="Your email" />
                         </fieldset>
                         <fieldset className="fieldset">
                             <legend className="fieldset-legend">Confirm Password</legend>
-                            <input name='password' type="password" className="input w-full" placeholder="Your password" />
+                            <input name='password' type="password" className="input w-full focus:outline-none border-0 input-bg" placeholder="Your password" />
                         </fieldset>
                         <button className="btn-block btn-info btn mt-5">Login</button>
                     </form>
