@@ -7,7 +7,7 @@ export const registerUser = async (payload) => {
     
     // Validation
     const { name, email, password } = payload;
-    if (!name, !email || !password) return null;
+    if (!name || !email || !password) return null;
 
     const user = await userCollection.findOne({ email });
 
