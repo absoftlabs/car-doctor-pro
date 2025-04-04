@@ -12,12 +12,12 @@ export default async function Products() {
                 <h1 className='font-bold text-[45px] text-center'>Browse Our Products</h1>
                 <p className='text-[16px] font-light text-center'>the majority have suffered alteration in some form, by injected humour, or randomised <br></br>words which don't look even slightly believable. </p>
             </div>
-            <div className="grid grid-cols-12 gap-5 my-10">
+            <div className="grid grid-cols-12 gap-8 my-10">
                 {
                     data.map(product => (
-                        <div key={product._id} className="col-span-6 md:col-span-4">
-                            <div className="card bg-base-100 w-96 shadow-smi border-2 border-gray-200 p-5">
-                                <figure className='h-[215px] bg-gray-100'>
+                        <div key={product._id} className="col-span-6 md:col-span-4 sweet-shadow rounded-xl overflow-hidden">
+                            <div className="card p-5">
+                                <figure className='h-[215px] bg-[#f0f0f0]'>
                                     <Image className='p-[15px]' src={product.image} height={200} width={200} sizes="(max-width: 100%) 100vw, 33vw" alt={product.name}/>
                                 </figure>
                                 <div className="card-body flex flex-col items-center">
