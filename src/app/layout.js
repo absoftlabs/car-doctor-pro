@@ -24,15 +24,15 @@ export default function RootLayout({ children }) {
   return (
     <html className="" lang="en" data-theme="mytheme">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} w-full antialiased grid place-content-around`}
+        className={`${geistSans.variable} ${geistMono.variable} w-full antialiased `}
       >
         <NextAuthProvider>
-          <div className="w-[360px] md:w-[820px] lg:w-[1200px]">
-            <Toaster position="top-center" reverseOrder={false} />
-            <NavBar />
+          <NavBar />
+          <Toaster position="top-center" reverseOrder={false} />
+          <div className="w-[360px] md:w-[820px] lg:w-[1200px] mx-auto">
             {children}
-            <Footer />
           </div>
+          <Footer />
         </NextAuthProvider>
       </body>
     </html>
