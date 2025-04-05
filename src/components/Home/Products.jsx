@@ -4,6 +4,7 @@ import Image from 'next/image';
 import React from 'react'
 
 export default async function Products() {
+    
     const serviceCollection = dbConnect(collectionNamesObj.productCollection);
     const data = await serviceCollection.find({}).toArray();
     return (
@@ -17,7 +18,7 @@ export default async function Products() {
                 {
                     data.map(product => (
                         <div key={product._id} className="col-span-6 md:col-span-4 sweet-shadow rounded-xl overflow-hidden relative">
-                            <div className="bg-white rounded-full p-2 absolute z-50 right-[30px] top-[30px] hover:bg-info hover:text-white transition-all cursor-pointer active:scale-90">
+                            <div className="bg-white rounded-md text-info p-2 absolute z-50 right-[30px] top-[30px] hover:bg-info hover:text-white transition-all cursor-pointer active:scale-90">
                                 <IconShoppingBag />
                             </div>
                             <div className="card p-5 z-10">

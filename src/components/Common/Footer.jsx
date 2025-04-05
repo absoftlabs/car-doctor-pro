@@ -10,7 +10,7 @@ export default function Footer() {
             <div className="grid grid-cols-11 gap-5 w-full md:w-[1200px] mx-auto">
                 <div className="col-span-11 md:col-span-5">
                     <Image src={logo} height={80} width={120} alt='logo' />
-                    <p className='text-white text-[14px] md:text-[16px]'>Edwin Diaz is a software and web<br></br> technologies engineer, a life coach<br></br> trainer who is also a serial.</p>
+                    <p className='text-white text-[14px] md:text-[16px] mt-3'>Edwin Diaz is a software and web<br></br> technologies engineer, a life coach<br></br> trainer who is also a serial.</p>
                     <div className="flex gap-2 items-center text-white mt-5">
                         <p className='bg-[#363636] p-3 rounded-full cursor-pointer active:scale-90 transition-all'><IconBrandFacebookFilled/></p>
                         <p className='bg-[#363636] p-3 rounded-full cursor-pointer active:scale-90 transition-all'><IconBrandTwitterFilled/></p>
