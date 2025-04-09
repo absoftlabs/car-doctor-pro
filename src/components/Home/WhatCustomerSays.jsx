@@ -13,7 +13,7 @@ export default async function WhatCustomerSays() {
     }));
 
     return (
-        <div>
+        <div className='my-20'>
             <div className="">
                 <p className='font-bold text-info text-center text-[20px] '>Testimonial</p>
                 <h1 className='font-bold text-[45px] text-center'>What Customer Says</h1>
@@ -22,7 +22,6 @@ export default async function WhatCustomerSays() {
                     words which don't look even slightly believable.
                 </p>
             </div>
-
             <Testimonial plainTestimonials={plainTestimonials} />
         </div>
     );

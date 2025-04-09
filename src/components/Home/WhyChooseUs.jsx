@@ -9,7 +9,7 @@ import delivery from '@/assets/icons/delivery.svg';
 
 export default function WhyChooseUs() {
     return (
-        <div>
+        <div className='my-20'>
             <div className="">
                 <p className='font-bold text-info text-center text-[20px]'>Core Features</p>
                 <h1 className='font-bold text-[45px] text-center'>Why Choose Us</h1>
