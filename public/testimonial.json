@@ -1,0 +1,37 @@
+[
+    {
+        "avater": "https://i.ibb.co.com/G36qb7X/nft1.jpg",
+        "name": "Awlad Hossain",
+        "designation": "Businessman",
+        "rating": 5,
+        "says": "Awlad is extremely satisfied with the service and recommends it to everyone."
+    },
+    {
+        "avater": "https://i.ibb.co.com/3hVN3ST/nft3.jpg",
+        "name": "Sara Rahman",
+        "designation": "Marketing Manager",
+        "rating": 4,
+        "says": "The team was professional and attentive. I had a great experience!"
+    },
+    {
+        "avater": "https://i.ibb.co.com/Dr2kkTK/nft8.jpg",
+        "name": "Jahid Hasan",
+        "designation": "Freelancer",
+        "rating": 5,
+        "says": "Fantastic service! Everything was handled smoothly and efficiently."
+    },
+    {
+        "avater": "https://i.ibb.co.com/0nDmFPD/nft6.jpg",
+        "name": "Nusrat Jahan",
+        "designation": "Software Engineer",
+        "rating": 4,
+        "says": "Very helpful and easy to work with. Would definitely come back again."
+    },
+    {
+        "avater": "https://i.ibb.co.com/qWVG8qK/nft2.jpg",
+        "name": "Tanvir Alam",
+        "designation": "UI/UX Designer",
+        "rating": 5,
+        "says": "A creative and reliable team that delivered beyond my expectations."
+    }
+]
