@@ -8,7 +8,9 @@ export default function ServiceDetails({ data }) {
 
     return (
         <div>
-            <figure className='h-[400px] overflow-hidden rounded-xl border-2 border-gray-300'><Image className='rounded-xl w-full' src={img} width={752} height={200} alt={title} /></figure>
+            <figure className='h-[400px] overflow-hidden rounded-xl input-bg border-gray-300'>
+                <Image className='rounded-xl w-full' src={img} width={752} height={200} alt={title} />
+            </figure>
             <div className="my-4">
                 <h1 className='text-[35px] font-bold mb-7'>{title}</h1>
                 <p className='text-[14px] md:text-[16px] text-gray-400'>{description}</p>
@@ -61,7 +63,7 @@ export default function ServiceDetails({ data }) {
                     </div>
                 </div>
             </div>
-            <YouTube/>
+            <YouTube />
         </div>
     )
 }

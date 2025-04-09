@@ -11,7 +11,7 @@ export default async function ServicesSection() {
     const data = await serviceCollection.find({}).toArray();
     
     return (
-        <div className='my-5 px-4 md:px-0'>
+        <div className='my-20 px-4 md:px-0'>
             <div className="">
                 <p className='font-bold text-info text-center text-[20px]'>Services</p>
                 <h1 className='font-bold text-[45px] text-center'>Our Service Area</h1>
