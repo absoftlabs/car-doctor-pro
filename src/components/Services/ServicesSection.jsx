@@ -21,7 +21,7 @@ export default async function ServicesSection() {
                 {
                     data.map((item) => {
                         return (
-                            <div key={item._id} className='col-span-12 md:col-span-6 lg:col-span-4 sweet-shadow rounded-xl overflow-hidden'>
+                            <div key={item._id} className='col-span-12 md:col-span-6 lg:col-span-4 input-bg rounded-xl overflow-hidden'>
                                 <div className="card bg-white w-full shadow-sm p-6">
                                     <figure className='min-h-[208px]'>
                                         <Image className='rounded-lg' src={item.img} height={208} width={314} alt={item.title} />

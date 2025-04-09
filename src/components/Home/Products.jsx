@@ -17,7 +17,7 @@ export default async function Products() {
             <div className="grid grid-cols-12 gap-8 my-10">
                 {
                     data.map(product => (
-                        <div key={product._id} className="col-span-6 md:col-span-4 sweet-shadow rounded-xl overflow-hidden relative">
+                        <div key={product._id} className="col-span-6 md:col-span-4 input-bg rounded-xl overflow-hidden relative">
                             <div className="bg-white rounded-md text-info p-2 absolute z-50 right-[30px] top-[30px] hover:bg-info hover:text-white transition-all cursor-pointer active:scale-90">
                                 <IconShoppingBag />
                             </div>
