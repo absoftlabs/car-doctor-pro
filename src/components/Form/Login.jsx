@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { signIn } from "next-auth/react"
 import toast from 'react-hot-toast';
 import { useRouter } from 'next/navigation';
+import SocialLogin from './SocialLogin';
 
 
 export default function Login() {
@@ -83,17 +84,7 @@ export default function Login() {
                     </form>
                     <div className='my-5'>
                         <p className='text-center text-[16px] md:text-[18px] my-5'>Or Sign In with</p>
-                        <div className="flex gap-4 justify-center items-center">
-                            <div className="bg-base-200 rounded-full h-[55px] w-[55px] grid place-content-center">
-                                <IconBrandFacebookFilled className='text-blue-800' />
-                            </div>
-                            <div className="bg-base-200 rounded-full h-[55px] w-[55px] grid place-content-center">
-                                <IconBrandLinkedinFilled className='text-blue-600' />
-                            </div>
-                            <div className="bg-base-200 rounded-full h-[55px] w-[55px] grid place-content-center">
-                                <IconBrandGoogleFilled className='text-red-600' />
-                            </div>
-                        </div>
+                        <SocialLogin/>
                         <p className='text-center text-[16px] md:text-[18px] my-5 text-gray-400'>have'nt an account? <Link className='text-info' href={'/register'}>Sign Up</Link></p>
                     </div>
                 </div>
