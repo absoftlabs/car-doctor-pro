@@ -9,7 +9,7 @@ import { IconShoppingBag } from '@tabler/icons-react';
 const NavBar = () => {
     const { data: session, status } = useSession();
     const [isActive, setIsActive] = useState(0);
-
+    console.log(session)
     const navMenu = () => {
         return (
             <>
@@ -75,7 +75,7 @@ const NavBar = () => {
                                 <div className="dropdown dropdown-end">
                                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar active:scale-90 transition-all">
                                         <div className="w-10 rounded-full">
-                                            <Image src={'https://i.ibb.co.com/G36qb7X/nft1.jpg'} height={40} width={40} alt='avater'/>
+                                            <Image src={session?.user?.image} height={40} width={40} alt='avater'/>
                                         </div>
                                     </div>
                                     <ul
