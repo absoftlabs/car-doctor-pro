@@ -15,7 +15,7 @@ export default async function WhatCustomerSays() {
     return (
         <div className='my-20'>
             <div className="">
-                <p className='font-bold text-info text-center text-[20px] '>Testimonial</p>
+                <p className='font-bold text-info text-[14px] md:text-[18px] mb-3 uppercase text-center'>__Testimonial</p>
                 <h1 className='font-bold text-[45px] text-center'>What Customer Says</h1>
                 <p className='text-[16px] font-light text-center'>
                     the majority have suffered alteration in some form, by injected humour, or randomised <br />

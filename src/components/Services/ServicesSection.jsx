@@ -13,7 +13,7 @@ export default async function ServicesSection() {
     return (
         <div className='my-20 px-4 md:px-0'>
             <div className="">
-                <p className='font-bold text-info text-center text-[20px]'>Services</p>
+                <p className='font-bold text-info text-[14px] md:text-[18px] mb-3 uppercase text-center'>__Services</p>
                 <h1 className='font-bold text-[45px] text-center'>Our Service Area</h1>
                 <p className='text-[16px] font-light text-center'>the majority have suffered alteration in some form, by injected humour, or randomised <br></br>words which don't look even slightly believable. </p>
             </div>
@@ -30,7 +30,7 @@ export default async function ServicesSection() {
                                         <h2 className="card-title text-[25px] font-bold">{item.title}</h2>
                                         <div className="card-actions flex justify-between items-center">
                                             <p className='font-bold text-info text-[20px]'>Price: {item.price}</p>
-                                            <Link href={`/services/${item._id}`} className="p-4 rounded-xl hover:bg-info hover:text-white text-info active:scale-90 transition-all"><IconArrowRight /></Link>
+                                            <Link href={`/services/${item._id}`} className="p-3 border rounded-xl hover:bg-info hover:text-white text-info active:scale-90 transition-all"><IconArrowRight /></Link>
                                         </div>
                                     </div>
                                 </div>
